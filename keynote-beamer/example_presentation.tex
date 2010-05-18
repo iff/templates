@@ -1,0 +1,78 @@
+\documentclass[xcolor=pdftex,table,10pt]{beamer}
+
+\usepackage{pgfpages}
+%\pgfpagesuselayout{4 on 1}[a4paper, border shrink=5mm, landscape]
+%\setbeamercolor{background canvas}{bg=black,fg=white}
+%\usebeamercolor[fg]{background canvas}
+
+\mode<presentation> {
+  \usetheme{keynote-iff}
+}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{colortbl}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{url}
+\usetikzlibrary{shapes,arrows,snakes,backgrounds}
+\usefonttheme[onlymath]{serif}
+
+\title[SHORT]{TITLE}
+\author[Yves Ineichen]{Yves Ineichen \\ \texttt{ineichen@inf.ethz.ch}}
+\institute{Institute}
+\date{7th May 2010}
+
+\begin{document}
+
+% For every picture that defines or uses external nodes, you'll have to
+% apply the 'remember picture' style. To avoid some typing, we'll apply
+% the style to all pictures.
+\tikzstyle{every picture}+=[remember picture]
+
+% By default all math in TikZ nodes are set in inline mode. Change this to
+% displaystyle so that we don't get small fractions.
+\everymath{\displaystyle}
+
+\lstset{language=C++, basicstyle=\small}
+
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Frametitle}
+
+    \begin{block}{Block}
+        bla bla bla...
+    \end{block}
+
+    \vspace{0.1cm}
+    
+    \begin{exampleblock}{ExampleBlock}
+        \begin{itemize}
+            \item aa
+            \item bb
+        \end{itemize}
+    \end{exampleblock}
+    
+    \vspace{0.1cm}
+
+    \begin{alertblock}{AlertBlock}  
+    \begin{itemize}
+        \item aa 
+        \item bb
+    \end{itemize}
+    \end{alertblock}
+
+\end{frame}
+
+\end{document}
