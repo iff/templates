@@ -1,0 +1,7 @@
+h2. templates
+
+This is a modest collection of templates
+
+    * beamer
+    * tex
+
