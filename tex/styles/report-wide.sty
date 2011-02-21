@@ -1,0 +1,80 @@
+\documentclass[automark,a4paper,11pt,headsepline]{scrartcl}
+\topmargin 0 cm
+\headheight 0 cm
+\headsep 0.9 cm
+\oddsidemargin 0 cm
+\evensidemargin 0 cm 
+\textwidth  15.8 cm 
+\textheight 24.6 cm
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt} 
+\addtolength{\headheight}{0.5pt}
+\fancypagestyle{plain}{ 
+	\fancyhead{}
+	\renewcommand{\headrulewidth}{0pt} 
+}
+
+\usepackage{graphicx} 
+\usepackage{color}
+\usepackage[all]{xy}  
+\usepackage{hhline}
+\usepackage{url}  
+\usepackage{amsmath} 
+\usepackage{amssymb}  
+%\numberwithin{equation}{chapter}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{algorithm,algorithmic}
+\usepackage{tikz}
+\usepackage{pgflibraryshapes}  
+\usetikzlibrary{arrows}
+\usetikzlibrary{mindmap,trees}
+\usepackage[overlay,absolute]{textpos}
+\usepackage{rotating}
+\usepackage{cite}
+
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{pgfpages}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=true,      % page fit to window when opened
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfnewwindow=true,      % links in new window
+    pdfkeywords={keywords}, % list of keywords
+    colorlinks=true,        % false: boxed links; true: colored links
+    linkcolor=black,        % color of internal links
+    citecolor=blue,         % color of links to bibliography
+    filecolor=blue,         % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\subject{SUBJECT}  
+\author{Yves Ineichen}
+
+\title{TITLE}
+\date{DATE}
+
+\publishers{PUBLISHERS}
+
+\begin{document}
+
+\maketitle  
+
+\end{document} 
