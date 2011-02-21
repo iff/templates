@@ -6,52 +6,31 @@
 \useinnertheme[]{rounded}
 \usecolortheme{rose}
 
-%\definecolor{bottomcolour}{rgb}{0.22,0.2,0.28}
-\definecolor{bottomcolour}{rgb}{0.32,0.3,0.38}
-\definecolor{middlecolour}{rgb}{0.08,0.08,0.16}
 \setbeamerfont{title}{size=\Huge}
 \setbeamercolor{structure}{fg=white}
 \setbeamertemplate{frametitle}[default][center]
-
 \setbeamercolor{normal text}{bg=black, fg=white}
-\setbeamertemplate{background canvas}[vertical shading]
-[bottom=bottomcolour, middle=middlecolour, top=black]
 
-\setbeamertemplate{itemize item}{\lower3pt\hbox{\Large\textbullet}}
-\setbeamerfont{frametitle}{size=\huge} 
-
+\setbeamertemplate{itemize item}{\hbox{\large\textbullet}}
+\setbeamerfont{frametitle}{size=\Huge} 
 \setbeamertemplate{navigation symbols}{} 
 
-\AtBeginSection[]
-{
-  \begin{frame}<beamer>
-    \frametitle{Outline}
-    \tableofcontents[currentsection,hideothersubsections]
-  \end{frame}
-}
+\setbeamertemplate{footline}{}
 
-\AtBeginSubsection[]
-{
-  \begin{frame}<beamer>
-    \frametitle{Outline}
-    \tableofcontents[currentsection,currentsubsection]
-  \end{frame}
-}
-
-%change bottom line
-\setbeamertemplate{footline}
-{
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.23\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}\insertshortauthor
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.54\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
-    \usebeamerfont{title in head/foot}\insertshorttitle
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.23\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
-  \end{beamercolorbox}}%
-  \vskip0pt%
-}
+%%change bottom line
+%\setbeamertemplate{footline}
+%{
+  %\leavevmode%
+  %\hbox{%
+  %\begin{beamercolorbox}[wd=.23\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    %\usebeamerfont{author in head/foot}\insertshortauthor
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.54\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    %\usebeamerfont{title in head/foot}\insertshorttitle
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.23\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    %\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  %\end{beamercolorbox}}%
+  %\vskip0pt%
+%}
