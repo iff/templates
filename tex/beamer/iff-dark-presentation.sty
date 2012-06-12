@@ -1,0 +1,100 @@
+\usetheme{default}
+\usepackage{color}
+\useinnertheme[]{rounded}
+\usecolortheme{rose}
+
+\setbeamerfont{title}{size=\huge}
+\setbeamercolor{structure}{fg=white}
+\setbeamertemplate{frametitle}[default][center]
+\setbeamercolor{normal text}{bg=black, fg=white}
+\setbeamercolor{alerted text}{fg=orange}
+\setbeamerfont{frametitle}{size=\Huge}
+
+%\setbeamertemplate{itemize item}{\vbox{\hrule width0.5ex height1ex depth0pt}}
+\setbeamertemplate{itemize item}{\hbox{\large\textbullet}}
+\setbeamertemplate{itemize subitem}{\hbox{\textbullet}}
+%\setbeamertemplate{itemize subitem}{\hbox{$\blacktriangleright$}}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+
+%% Colors
+\definecolor{red}{RGB}{219,42,98}
+\definecolor{green}{RGB}{191,255,0}
+\definecolor{blue}{RGB}{0,191,255}
+\definecolor{orange}{RGB}{255,153,0}
+\definecolor{darkgray}{RGB}{191,20,34}
+\definecolor{acidgreen}{RGB}{71,83,94}
+\definecolor{darkolive}{RGB}{71,74,25}
+
+
+%% Background
+\usebackgroundtemplate{
+    \includegraphics[height=\paperheight,keepaspectratio]{../style/background/irongrip_beamer.png}
+}
+
+
+%% Packages
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{colortbl}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{url}
+\usepackage{algpseudocode}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,snakes,backgrounds}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{mindmap,trees}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{calc}
+
+%%XXX: requires XeLaTeX
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+
+%% Full frame graphic
+\newcommand {\fullframegraphic}[1] {
+    {
+        \usebackgroundtemplate{\includegraphics[width=\paperwidth,keepaspectratio]{#1}}
+        \begin{frame}
+        \end{frame}
+    }
+}
+
+
+%% Full frame graphic with title (keep aspect ratio and use slide height)
+\newcommand {\titledfullframegraphicH}[2] {
+    {
+        \usebackgroundtemplate{\includegraphics[height=\paperheight,keepaspectratio]{#2}}
+        \begin{frame}
+            \begin{tikzpicture}[overlay]
+                \draw[fill=black,color=black,opacity=0.5] (-2.0, 3.0) rectangle
+                (12.5, 5.0);
+                \draw (11.7, 3.5) node[left] (t1) {\Huge \textbf{#1}};
+            \end{tikzpicture}
+        \end{frame}
+    }
+}
+
+
+%% Full frame graphic with title (keep aspect ratio and use slide width)
+\newcommand {\titledfullframegraphicW}[2] {
+    {
+        \usebackgroundtemplate{\includegraphics[width=\paperwidth,keepaspectratio]{#2}}
+        \begin{frame}
+            \begin{tikzpicture}[overlay]
+                \draw[fill=black,color=black,opacity=0.5] (-2.0, 3.0) rectangle
+                (12.5, 5.0);
+                \draw (11.7, 3.5) node[left] (t1) {\Huge \textbf{#1}};
+            \end{tikzpicture}
+        \end{frame}
+    }
+}
