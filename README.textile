@@ -1,7 +1,11 @@
-h2. templates
+h2. Templates
 
-This is a modest collection of templates
+Hosting template files (currently only for LaTeX):
 
-    * beamer
-    * tex
+* beamer
+  * keynote-ish style
+  * dark-gray presentation with background image
+* tex
+  * default style
+  * wide report (narrow margins)
 
