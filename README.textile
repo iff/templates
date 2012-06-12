@@ -3,9 +3,9 @@ h2. Templates
 Hosting template files (currently only for LaTeX):
 
 * beamer
-  * keynote-ish style
-  * dark-gray presentation with background image
+    * keynote-ish style
+    * dark-gray presentation with background image
 * tex
-  * default style
-  * wide report (narrow margins)
+    * default style
+    * wide report (narrow margins)
 
